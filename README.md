@@ -5,9 +5,12 @@
 ![Example2](a111_clip.gif)
 
 
-使用    	 `compile 'com.github.flyMountain:RotateBannerImage:v1.0'`
+**使用**
+
+`compile 'com.github.flyMountain:RotateBannerImage:v1.0'`
 
 
+**操作**
 
     	//设置图片的个数
         imageLinear.setDicators(4);
@@ -21,7 +24,8 @@
         imageLinear.setIndicatorImage(R.drawable.icon_point,R.drawable.icon_point_pre);
 
 
-加载图片 （使用的是Glide）
+
+  加载图片 （使用的是Glide）
 
 
     //第一张图片
