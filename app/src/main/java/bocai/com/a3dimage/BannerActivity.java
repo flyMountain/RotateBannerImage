@@ -2,19 +2,13 @@ package bocai.com.a3dimage;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import bocai.com.bannerimage.BannerImageLinear;
-import bocai.com.bannerimage.Roll3DView;
 
 /**
  * 作者 yuanfei on 2017/2/7.
@@ -24,9 +18,6 @@ import bocai.com.bannerimage.Roll3DView;
 public class BannerActivity extends Activity {
 
     private BannerImageLinear imageLinear;
-    private Roll3DView roll3DView;
-    private BitmapDrawable bgDrawable1, bgDrawable2,bgDrawable3,bgDrawable4,bgDrawable5;
-    private List<ImageView> imageViews = new ArrayList<ImageView>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +37,7 @@ public class BannerActivity extends Activity {
         //设置指示器的图片
         imageLinear.setIndicatorImage(R.drawable.icon_point,R.drawable.icon_point_pre);
 
+        //第一张图片
          Glide.with(this).load("http://pic11.nipic.com/20101214/213291_155243023914_2.jpg").asBitmap().into(new SimpleTarget<Bitmap>(){
 
             @Override
@@ -53,6 +45,7 @@ public class BannerActivity extends Activity {
                 imageLinear.addBitmap(resource);
             }
         });
+        //第二张张图片
         Glide.with(this).load("http://pic2.ooopic.com/12/32/19/90bOOOPIC39_1024.jpg").asBitmap().into(new SimpleTarget<Bitmap>(){
 
             @Override
