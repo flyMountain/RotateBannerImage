@@ -5,6 +5,7 @@
 ![Example2](a111_clip.gif)
 
 
+使用    	 `compile 'com.github.flyMountain:RotateBannerImage:v1.0'`
 
 
 
