@@ -46,3 +46,5 @@
         });
 
 最后执行 `imageLinear.startAnim();`
+
+图片轮转效果参考[https://github.com/zhangyuChen1991/Roll3DImageView](https://github.com/zhangyuChen1991/Roll3DImageView "这里")
